@@ -458,4 +458,22 @@ class Helper {
 		return $string;
 	}
 
+	/**
+	 * Return initialized array full of 0 with keys the given array
+	 *
+	 * @param array $key_array array of keys
+	 * 
+	 * @author Luca Brognara
+	 * @date May 2015
+	 * @return array
+	 */
+	private function init_array_with($key_array) {
+		$array = array();
+		foreach ($key_array as $key => $value) {
+			$array[$value] = 0;
+		}
+
+		return ($array);
+	}
+
 }
